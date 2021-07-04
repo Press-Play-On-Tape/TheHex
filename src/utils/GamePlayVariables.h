@@ -19,8 +19,8 @@ struct GamePlayVariables {
     uint8_t cursor;
     uint8_t gameOverCounter = 0;
     uint8_t timer = Constants::Hexer::TimerMax;
-    uint16_t movesLeft = 105;
-    uint16_t movesLeft_Orig = 105;
+    uint16_t movesLeft = 85;
+    uint16_t movesLeft_Orig = 85;
     uint16_t level = 0;
     uint8_t populate = 0;
 
@@ -55,8 +55,8 @@ struct GamePlayVariables {
         this->cursor;
         this->gameOverCounter = 0;
         this->timer = Constants::Hexer::TimerMax;
-        this->movesLeft = 105;
-        this->movesLeft_Orig = 105;
+        this->movesLeft = 85;
+        this->movesLeft_Orig = 85;
         this->level = 0;
         this->populate = 0;
 
