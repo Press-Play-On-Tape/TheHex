@@ -880,4 +880,6 @@ namespace Images {
         particle_19,
     };
 
+    #include "VersionNo.h"
+
 }

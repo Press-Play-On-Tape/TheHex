@@ -353,6 +353,8 @@ void Game::game_Hexic() {
             }
 
             if (PC::buttons.pressed(BTN_B)) {
+
+                this->gamePlayVariables.movesLeft--;
                 
                 if (this->gamePlayVariables.flowerSelected.mode != SelectionMode::FlowerSelected) {
 
