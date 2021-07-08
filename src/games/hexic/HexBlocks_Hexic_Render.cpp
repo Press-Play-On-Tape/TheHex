@@ -480,7 +480,7 @@ void Game::renderScreen_Rotate_Cluster_XOdd_YEven_Hexic() {
                        Constants::Hexic::Cell_yPos[yCell] + 9 - (this->gamePlayVariables.removePieces.pos > 9 ? 9 : 9 - this->gamePlayVariables.removePieces.pos),
                        Images::Hex_Rotated[color]);
 
-        color = this->gamePlayVariables.board[xCell][yCell + 1];
+        color = this->gamePlayVariables.board[xCell + 1][yCell + 1];
         PD::drawBitmap(Constants::Hexic::Cell_Left + ((xCell + 1) * 17), 
                        Constants::Hexic::Cell_yPos[yCell] + (this->gamePlayVariables.removePieces.pos > 9 ? 18 : 18 - (this->gamePlayVariables.removePieces.pos * 2)),
                        Images::Hex_Rotated[color]);
@@ -499,7 +499,7 @@ void Game::renderScreen_Rotate_Cluster_XOdd_YEven_Hexic() {
                        Constants::Hexic::Cell_yPos[yCell] + (this->gamePlayVariables.removePieces.pos > 9 ? 9 : 9 - this->gamePlayVariables.removePieces.pos),
                        Images::Hex_Rotated[color]);
 
-        color = this->gamePlayVariables.board[xCell][yCell + 1];
+        color = this->gamePlayVariables.board[xCell + 1][yCell + 1];
         PD::drawBitmap(Constants::Hexic::Cell_Left + (xCell * 17) + Constants::fallingYOffset[this->gamePlayVariables.removePieces.pos > 9 ? 9 : 9 - this->gamePlayVariables.removePieces.pos], 
                        Constants::Hexic::Cell_yPos[yCell] + 9 + (this->gamePlayVariables.removePieces.pos > 9 ? 9 : 9 - this->gamePlayVariables.removePieces.pos),
                        Images::Hex_Rotated[color]);

@@ -300,7 +300,7 @@ void Game::highScore() {
         
     }
 
-    PD::drawBitmap(207, 168, Images::VersionNo);
+    PD::drawBitmap(205, 168, Images::VersionNo);
 
     this->fadeInOut();
 
