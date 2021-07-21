@@ -287,16 +287,15 @@ void Game::removeWinningLines_Hexon() {
 
                         if (startingPos == range) {
 
-                            color = this->gamePlayVariables.board[startingPos][y];
+                            color = abs(this->gamePlayVariables.board[startingPos][y]);
 
-                            if (color <= 0) {
+                            if (color == 0) {
 
                                 break;
 
                             }
                             else {
 
-                                color = this->gamePlayVariables.board[startingPos][y];
                                 count = 1;
 
                             }
@@ -358,16 +357,15 @@ void Game::removeWinningLines_Hexon() {
 
                         if (startingPos == range) {
 
-                            color = this->getCellSlash_Hexon(startingPos, d);
+                            color = abs(this->getCellSlash_Hexon(startingPos, d));
 
-                            if (color <= 0) {
+                            if (color == 0) {
 
                                 break;
 
                             }
                             else {
 
-                                color = this->getCellSlash_Hexon(startingPos, d);
                                 count = 1;
 
                             }
@@ -408,7 +406,7 @@ void Game::removeWinningLines_Hexon() {
 
     }
 
-    // Backslash /
+    // Backslash top left,bottom
 
    for (uint8_t d = 0; d < Constants::GridSize; d++) {
 
@@ -430,16 +428,15 @@ void Game::removeWinningLines_Hexon() {
 
                         if (startingPos == range) {
 
-                            color = this->getCellBackslash_Hexon(startingPos, d);
+                            color = abs(this->getCellBackslash_Hexon(startingPos, d));
 
-                            if (color <= 0) {
+                            if (color == 0) {
 
                                 break;
 
                             }
                             else {
 
-                                color = this->getCellBackslash_Hexon(startingPos, d);
                                 count = 1;
 
                             }
